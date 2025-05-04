@@ -1,0 +1,18 @@
+{
+  "extends": "@acquirer/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@acquirer/ui/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

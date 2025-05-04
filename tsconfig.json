@@ -1,0 +1,3 @@
+{
+  "extends": "@acquirer/typescript-config/base.json"
+}

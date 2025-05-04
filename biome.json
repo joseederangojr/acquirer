@@ -1,0 +1,58 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "files": {
+        "ignore": ["CHANGELOG.md", "pnpm-lock.yaml", "tsconfig.json"]
+    },
+    "formatter": {
+        "enabled": true,
+        "lineEnding": "lf",
+        "useEditorconfig": true,
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 80
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "a11y": {
+                "useSemanticElements": "off",
+                "useFocusableInteractive": "off"
+            },
+            "correctness": {
+                "noUnusedVariables": "error",
+                "useExhaustiveDependencies": "warn"
+            },
+            "style": {
+                "noNonNullAssertion": "off",
+                "useShorthandArrayType": "error"
+            },
+            "suspicious": {
+                "noArrayIndexKey": "off",
+                "noConfusingVoidType": "off",
+                "noConsoleLog": "error",
+                "noExplicitAny": "off"
+            },
+            "security": {
+                "noDangerouslySetInnerHtml": "off"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "single",
+            "trailingCommas": "all",
+            "semicolons": "asNeeded"
+        }
+    },
+    "organizeImports": {
+        "enabled": true
+    },
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": true,
+        "defaultBranch": "main"
+    }
+}
